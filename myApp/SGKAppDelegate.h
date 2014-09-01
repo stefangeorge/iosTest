@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SGKViewController.h"
+@class SGKViewController;
 @interface SGKAppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (strong, nonatomic) SGKViewController *viewController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
