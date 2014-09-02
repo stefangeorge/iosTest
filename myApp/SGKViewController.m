@@ -8,20 +8,30 @@
 #import <UIKit/UIKit.h>
 #import "SGKViewController.h"
 
-//@interface SGKViewController;
-//@end
+
 
 @implementation SGKViewController
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+       [ super viewDidLoad];
+        self.view.backgroundColor = [UIColor yellowColor];
+   
     int x,y;
     x=5;
     y=6;
     NSLog(@"%i %i", x,y);
-    // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(void)loadView
+{
+        CGRect viewRect =[[UIScreen mainScreen] bounds];
+        UIView *colorView = [[UIView alloc] initWithFrame:viewRect];
+        self.view = colorView;
+}
+
+    // Do any additional setup after loading the view, typically from a nib.
+
 
 - (void)didReceiveMemoryWarning
 {
